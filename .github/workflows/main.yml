@@ -26,5 +26,5 @@ jobs:
       
       - name: gen makefiles
         run: 
-            cmake3 .
+            cmake .
       #etc...
