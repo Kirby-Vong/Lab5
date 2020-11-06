@@ -1,8 +1,6 @@
 #ifndef __PERIMETER_PASSING_TESTS_HPP__
 #define __PERIMETER_PASSING_TESTS_HPP__
 
-
-
 TEST(PerimeterTest, PerimeterNonZero) {
 	Rectangle r1 = Rectangle(3, 5);
 	EXPECT_EQ(r1.perimeter(), 16);
@@ -16,7 +14,7 @@ TEST(PerimeterTest, PerimeterNegative) {
 TEST(PerimeterTest, PerimeterZero) {
 	Rectangle r1 = Rectangle(0,0);
 	EXPECT_EQ(r1.perimeter(), 0);
-}						}
-
+}
 #endif
+
 
