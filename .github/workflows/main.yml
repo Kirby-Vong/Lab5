@@ -6,7 +6,7 @@ name: CI
 # events but only for the main branch
 on:
   push:
-    branches: [ main, benjaminshu2001/ci_setup]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -21,18 +21,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      with:
-         submodules: recursive
-                        
+        with:
+            submodules: recursive
+      
       - name: gen makefiles
         run: 
             cmake .
       - name: run make
         run: 
             make
-                                                                                  - name: create executable
+      - name: create executable
         run:
             ./test
-
-
-
