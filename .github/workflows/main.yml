@@ -6,7 +6,7 @@ name: CI
 # events but only for the main branch
 on:
   push:
-    branches: [ main, benjaminshu2001/ci_setup]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -26,5 +26,6 @@ jobs:
       
       - name: gen makefiles
         run: 
-            cmake3 .
-      #etc...
+            cmake .
+            make
+            ./test
