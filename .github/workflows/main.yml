@@ -27,4 +27,6 @@ jobs:
       - name: gen makefiles
         run: 
             cmake .
-      #etc...
+            make
+            ./test
+      
