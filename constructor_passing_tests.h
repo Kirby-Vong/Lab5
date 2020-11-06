@@ -1,7 +1,7 @@
 #ifndef __CONSTRUCTOR_PASSING_TESTS_HPP__
 #define __CONSTRUCTOR_PASSING_TESTS_HPP__
 
-#include "rectangle.cpp"
+
 
 TEST(ConstructorTest, ConstructorNonZero) {
     Rectangle r1 = Rectangle(2, 4);
